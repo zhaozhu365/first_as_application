@@ -61,4 +61,20 @@ public class MyButton extends View {
         return result;
     }
 
+    @Override
+    public void getLocationOnScreen(int[] location) {
+        super.getLocationOnScreen(location);
+    }
+
+    @Override
+    public void offsetLeftAndRight(int offset) {
+        super.offsetLeftAndRight(offset);
+    }
+
+    @Override
+    public void offsetTopAndBottom(int offset) {
+        super.offsetTopAndBottom(offset);
+    }
+
+
 }

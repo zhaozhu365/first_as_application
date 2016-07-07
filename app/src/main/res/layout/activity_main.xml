@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -17,6 +18,20 @@
         android:layout_below="@id/textView"
         android:background="#3fff4081"
         android:orientation="vertical">
+
+        <com.example.zhaozhu.myapplication.TopBar
+            android:id="@+id/topbar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            custom:leftBackground="#4056ff"
+            custom:leftText="Back"
+            custom:leftTextColor="#FFFFFF"
+            custom:mTitle="自定义标题"
+            custom:mTitleTextColor="#123412"
+            custom:mTitleTextSize="10sp"
+            custom:rightBackground="#4056ff"
+            custom:rightText="More"
+            custom:rightTextColor="#FFFFFF" />
 
         <com.example.zhaozhu.myapplication.MyButton
             android:layout_width="400px"
@@ -38,6 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="myTestView2" />
+
 
     </LinearLayout>
 

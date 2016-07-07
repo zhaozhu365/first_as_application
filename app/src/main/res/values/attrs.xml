@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="TopBar">
-        <attr name="title" format="string" />
-        <attr name="titleTextSize" format="dimension" />
-        <attr name="titleTextColor" format="color" />
+        <attr name="mTitle" format="string" />
+        <attr name="mTitleTextSize" format="dimension" />
+        <attr name="mTitleTextColor" format="color" />
         <attr name="leftTextColor" format="color" />
         <attr name="leftBackground" format="reference|color" />
         <attr name="leftText" format="string" />
