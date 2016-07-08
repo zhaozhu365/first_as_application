@@ -16,7 +16,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_1"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:text="startAnimation" />
+
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_1"
+        android:layout_marginTop="20dp"
+        android:text="startAnimator" />
+
+    <ImageView
+        android:id="@+id/imgv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_2"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/ic_launcher" />
+
+    <Button
+        android:id="@+id/btn_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgv_1"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/ic_launcher" />
 
 </RelativeLayout>

@@ -1,7 +1,7 @@
 package com.example.myapplication;
 
+import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
@@ -9,13 +9,17 @@ import android.view.animation.RotateAnimation;
 import android.view.animation.ScaleAnimation;
 import android.view.animation.TranslateAnimation;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
 
     private TextView textView;
     private Button button;
+    private Button button2;
+    private Button button3;
+    private ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +28,10 @@ public class MainActivity extends AppCompatActivity {
 
         textView = (TextView) findViewById(R.id.tv_1);
         button = (Button) findViewById(R.id.btn_1);
+        button2 = (Button) findViewById(R.id.btn_2);
+        button3 = (Button) findViewById(R.id.btn_3);
+        imageView = (ImageView) findViewById(R.id.imgv_1);
+
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,6 +73,55 @@ public class MainActivity extends AppCompatActivity {
 //                as.addAnimation(sa1);
 //                textView.startAnimation(AS);
 
+            }
+        });
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //1
+//                ObjectAnimator animator = ObjectAnimator.ofFloat(textView, "translationX", 300);
+//                animator.setDuration(300);
+//                animator.start();
+
+                //2
+//                PropertyValuesHolder pvh1 = PropertyValuesHolder.ofFloat("translationX", 300f);
+//                PropertyValuesHolder pvh2 = PropertyValuesHolder.ofFloat("scaleX", 1f, 0, 1f);
+//                PropertyValuesHolder pvh3 = PropertyValuesHolder.ofFloat("scaleY", 1f, 0, 1f);
+//                ObjectAnimator.ofPropertyValuesHolder(textView, pvh1, pvh2, pvh3).setDuration(1000).start();
+
+                //3
+//                ObjectAnimator animator1 = ObjectAnimator.ofFloat(textView, "translationX", 300f);
+//                ObjectAnimator animator2 = ObjectAnimator.ofFloat(textView, "scaleX", 1f, 0f, 1f);
+//                ObjectAnimator animator3 = ObjectAnimator.ofFloat(textView, "scaleY", 1f, 0f, 1f);
+//                AnimatorSet set = new AnimatorSet();
+//                set.setDuration(1000);
+//                set.playTogether(animator1, animator2, animator3);
+//                set.start();
+
+                //4
+//                Animator anim = AnimatorInflater.loadAnimator(MainActivity.this, R.animator.scalex);
+//                anim.setTarget(textView);
+//                anim.start();
+
+                //5
+                textView.animate().alpha(0).y(300).setDuration(300).start();
+
+                //6========
+                TVOFFAnimator TVOFFAnimator = new TVOFFAnimator();
+                TVOFFAnimator.setDuration(500);
+                imageView.startAnimation(TVOFFAnimator);
+
+
+            }
+        });
+
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CameraAnimator cameraAnimator = new CameraAnimator();
+                cameraAnimator.setmRotateY(360);
+                v.startAnimation(cameraAnimator);
             }
         });
 
