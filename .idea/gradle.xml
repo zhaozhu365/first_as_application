@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/animation_app" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/listview_app" />
+            <option value="$PROJECT_DIR$/vector_test" />
           </set>
         </option>
         <option name="myModules">
@@ -20,6 +21,7 @@
             <option value="$PROJECT_DIR$/animation_app" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/listview_app" />
+            <option value="$PROJECT_DIR$/vector_test" />
           </set>
         </option>
       </GradleProjectSettings>

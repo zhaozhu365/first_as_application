@@ -32,7 +32,7 @@ public class MainActivity extends Activity {
         button3 = (Button) findViewById(R.id.btn_3);
         imageView = (ImageView) findViewById(R.id.imgv_1);
 
-
+        // 视图动画
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -76,6 +76,7 @@ public class MainActivity extends Activity {
             }
         });
 
+        // 属性动画
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -116,6 +117,7 @@ public class MainActivity extends Activity {
             }
         });
 
+        //3D动画
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -124,6 +126,8 @@ public class MainActivity extends Activity {
                 v.startAnimation(cameraAnimator);
             }
         });
+
+
 
     }
 
