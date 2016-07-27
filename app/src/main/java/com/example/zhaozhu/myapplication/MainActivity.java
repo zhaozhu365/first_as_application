@@ -11,6 +11,9 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        System.out.println( DensityUtil.px2dip(this, 170));
+
         TopBar mTopBar = (TopBar) findViewById(R.id.topbar);
         mTopBar.setOnTopBarClickListener(new TopBar.TopBarClickListener() {
             @Override

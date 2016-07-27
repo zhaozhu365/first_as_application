@@ -1,6 +1,8 @@
 package com.example.myapplication;
 
 import android.app.Activity;
+import android.graphics.drawable.Animatable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
@@ -127,7 +129,25 @@ public class MainActivity extends Activity {
             }
         });
 
+        findViewById(R.id.imgv_3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Drawable drawable = ((ImageView)v).getDrawable();
+                if (drawable instanceof Animatable) {
+                    ((Animatable)drawable).start();
+                }
+            }
+        });
 
+        findViewById(R.id.imgv_4).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Drawable drawable = ((ImageView)v).getDrawable();
+                if (drawable instanceof Animatable) {
+                    ((Animatable)drawable).start();
+                }
+            }
+        });
 
     }
 
