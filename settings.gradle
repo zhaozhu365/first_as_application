@@ -1,1 +1,1 @@
-include ':app', ':listview_app', ':animation_app', ':vector_test', ':webview_test'
+include ':app', ':listview_app', ':animation_app', ':vector_test', ':webview_test', ':anim_7_7'
