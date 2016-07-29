@@ -149,6 +149,18 @@ public class MainActivity extends Activity {
             }
         });
 
+        findViewById(R.id.imgv_5).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Drawable drawable = ((ImageView)v).getDrawable();
+                if (drawable instanceof Animatable) {
+                    ((Animatable)drawable).start();
+                }
+            }
+        });
+
+
+
     }
 
 
