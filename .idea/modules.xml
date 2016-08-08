@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/12_2_material_design/12_2_material_design.iml" filepath="$PROJECT_DIR$/12_2_material_design/12_2_material_design.iml" />
+      <module fileurl="file://$PROJECT_DIR$/12_4_elevation/12_4_elevation.iml" filepath="$PROJECT_DIR$/12_4_elevation/12_4_elevation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/12_5_tinting/12_5_tinting.iml" filepath="$PROJECT_DIR$/12_5_tinting/12_5_tinting.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/androidosinfo/androidosinfo.iml" filepath="$PROJECT_DIR$/androidosinfo/androidosinfo.iml" />
       <module fileurl="file://$PROJECT_DIR$/anim_7_7/anim_7_7.iml" filepath="$PROJECT_DIR$/anim_7_7/anim_7_7.iml" />
       <module fileurl="file://$PROJECT_DIR$/animation_app/animation_app.iml" filepath="$PROJECT_DIR$/animation_app/animation_app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
