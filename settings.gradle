@@ -1,1 +1,1 @@
-include ':app', ':listview_app', ':animation_app', ':vector_test', ':webview_test', ':anim_7_7', ':androidosinfo', ':12_2_material_design', ':12_4_elevation', ':12_5_tinting'
+include ':app', ':listview_app', ':animation_app', ':vector_test', ':webview_test', ':anim_7_7', ':androidosinfo', ':12_2_material_design', ':12_4_elevation', ':12_5_tinting', ':12_5_2_clipping', ':12_6_1_recyclerview'
