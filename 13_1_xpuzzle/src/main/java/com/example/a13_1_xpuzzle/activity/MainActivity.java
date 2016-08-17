@@ -14,6 +14,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -81,7 +82,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 } else {
                     // 选择默认图片
                     Intent intent = new Intent(MainActivity.this, PuzzleMain.class);
+
+                    Log.e(MainActivity.class.getName(), "mResPicId = " + mResPicId[position] + "  position=" + position);
                     intent.putExtra("picSelectedId", mResPicId[position]);
+                    intent.putExtra("mResPicId", position);
                     intent.putExtra("mType", mType);
                     startActivity(intent);
                 }
@@ -179,8 +183,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 R.drawable.pic4, R.drawable.pic5, R.drawable.pic6,
                 R.drawable.pic7, R.drawable.pic8, R.drawable.pic9,
                 R.drawable.pic10, R.drawable.pic11, R.drawable.pic12,
-                R.drawable.pic13, R.drawable.pic14,
-                R.drawable.pic15, R.mipmap.ic_launcher
+                R.drawable.pic13, R.drawable.pic14, R.drawable.pic15,
+                R.mipmap.ic_launcher
         };
         Bitmap[] bitmaps = new Bitmap[mResPicId.length];
         for (int i = 0; i < bitmaps.length; i++) {
